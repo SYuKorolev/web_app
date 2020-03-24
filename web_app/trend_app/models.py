@@ -4,7 +4,7 @@ from django.contrib.postgres.fields import JSONField
 class Description(models.Model):
     graph_name = models.CharField(max_length=255)
     x_axis_name = models.CharField(max_length=255)
-    axis_name = models.CharField(max_length=255)
+    y_axis_name = models.CharField(max_length=255)
 
 class Trend(models.Model):
     json = JSONField()
